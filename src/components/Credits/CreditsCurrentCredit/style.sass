@@ -1,0 +1,38 @@
+.CreditsCurrentCredit
+	flex-basis: 100%
+	padding: 5px 20px
+	position: relative
+	&__text--right
+		float: right
+	&__wrapper
+		padding: 10px
+		background: #fff
+		border: 1px solid #9992c6
+	&__remove
+		position: absolute
+		right: 30px
+		top: 30px
+		color: red
+		cursor: pointer
+	&__button
+		color: white
+		margin-left: 10px
+		background-color: #9992c6
+		&:hover
+			color: white
+			background-color: darken(#9992c6, 10)
+
+@media only screen and (max-width: 530px)
+	.CreditsCurrentCredit
+		&__text--right
+			float: left
+			margin-bottom: 20px
+			margin-top: 10px
+		&__input
+			left: 50%
+			transform: translateX(-50%)
+		&__button
+			width: 100%
+			margin-left: 0
+			margin-top: 10px
+

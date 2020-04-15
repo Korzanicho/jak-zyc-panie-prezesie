@@ -1,0 +1,37 @@
+.Credits
+	flex-basis: 100%
+	height: auto
+	background-color: white
+	box-shadow: 0 0 6px #9992c6
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	justify-content: space-around
+	padding: 5px 10px
+	color: #9992c6
+	&__title
+		flex-basis: 50%
+	&__input
+		flex-basis: 34%
+		text-align: center
+		&:last-of-type
+			color: white
+			flex-basis: 15%
+			background-color: #9992c6
+			&:hover
+				color: white
+				background-color: darken(#9992c6, 10)
+		&:hover
+			color: #9992c6
+			cursor: pointer
+	&__list
+		flex-basis: 100%
+
+@media only screen and (max-width: 530px)
+	.Credits
+		&__input
+			flex-basis: 50%
+			&:last-of-type
+				flex-basis: 100%
+		&__title
+			text-align: center
